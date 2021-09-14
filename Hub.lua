@@ -13,6 +13,9 @@ PSection:NewToggle("Test", "Testing", function(state)
     if state then
         print("Toggle On")
     else
-        print("Toggle Off")
+       print("Toggle Off")
     end
+PSection:NewButton("Test", "ButtonInfo", function()
+    print("Clicked")
+end)
 end)
