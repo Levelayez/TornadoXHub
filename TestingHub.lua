@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("LevelTestingHub", "Sentinal")
+local Tab = Window:NewTab("Main")
+local Tab = Window:NewTab("Player")
+local Tab = Window:NewTab("Test")
+local Tab = Window:NewTab("Gui")
+local PSection = Tab:NewSection("Player")
+local MSection = Tab:NewSection("Main")
+local TSection = Tab:NewSection("Test")
+PSection:NewSlider("Walk Speed", "Sets The Speed Of The Player", 500, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+Section:NewSlider("Jump Power", "Sets How High A Player Jumps", 500, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+TSection:NewDropdown("Testing", "Testing", {"Option 1", "Option 2", "Option 3"}, function(currentOption)
+    print(currentOption)
+end)
