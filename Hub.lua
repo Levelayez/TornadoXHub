@@ -1,21 +1,23 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Tornado X", "Sentinal")
-local Tab = Window:NewTab("Main")
-local Tab = Window:NewTab("Player")
-local PSection = Tab:NewSection("Player")
-PSection:NewSlider("WalkSpeed", "Changes Your Walk Speed", 250, 16, function(s) 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+local Window = Library.CreateLib("Tornado X Script Hub", "Sentinel")
+
+-- MAIN
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("Tornado X Chat Spammer", "The Tornado X Chat Spammer", function(v)
+	loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa"))()
 end)
-PSection:NewSlider("JumpPower", "Changes Your Jumppower", 250, 16, function(j) 
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+
+-- PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+ 
+PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 end)
-PSection:NewToggle("Test", "Testing", function(state)
-    if state then
-        print("Toggle On")
-    else
-       print("Toggle Off")
-    end
-PSection:NewButton("Test", "ButtonInfo", function()
-    print("Clicked")
-end)
+ 
+PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
