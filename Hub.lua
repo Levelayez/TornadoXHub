@@ -7,7 +7,11 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
 MainSection:NewButton("Tornado X Chat Spammer", "The Tornado X Chat Spammer", function(v)
-	loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa", true))()
+end)
+
+MainSection:NewButton("Prison Life", "A Prison Life Script", function(v)
+	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 end)
 
 -- PLAYER
