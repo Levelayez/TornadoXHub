@@ -1,1 +1,31 @@
-local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()local b=a.CreateLib("Tornado X Script Hub","Sentinel")local c=b:NewTab("Main")local d=c:NewSection("Main")d:NewButton("Tornado X Chat Spammer","The Tornado X Chat Spammer",function(e)loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa",true))()end)d:NewButton("Prison Life","A Prison Life Script",function(e)loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4",true))()end)d:NewButton("Dark Hub","Dark Hub Many Games And Dark Theme Sometimes Crashes",function(e)loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init",true))()end)d:NewButton("Snow Hub","Snow Hub Many Games And Dark Theme Sometimes Crashes",function(e)loadstring(game:HttpGet("https://snowhub.dev/script.lua",true))()end)local f=b:NewTab("Player")local g=f:NewSection("Player")g:NewSlider("Walkspeed","Changes the walkspeed",250,16,function(e)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=e end)g:NewSlider("Jumppower","Changes the jumppower",250,50,function(e)game.Players.LocalPlayer.Character.Humanoid.JumpPower=e end)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Tornado X Script Hub", "Sentinel")
+ 
+-- MAIN
+ 
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+ 
+MainSection:NewButton("Tornado X Chat Spammer", "The Tornado X Chat Spammer", function(v)
+	loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa", true))()
+end)
+ 
+MainSection:NewButton("Prison Life", "A Prison Life Script", function(v)
+	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+end)
+
+MainSection:NewButton("Kitty Hub", "Kitty Hub A Few Games And Dark Theme", function(v)
+	loadstring(game:HttpGet("print("W.I.P", true))()
+end)
+ 
+-- PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+ 
+PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+ 
+PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
