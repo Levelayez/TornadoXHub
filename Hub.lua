@@ -15,7 +15,7 @@ MainSection:NewButton("Prison Life", "A Prison Life Script", function(v)
 end)
 
 MainSection:NewButton("Kitty Hub", "Kitty Hub A Few Games And Dark Theme", function(v)
-	loadstring(game:HttpGet("print("W.I.P", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KittenPixel-cell/Kitty-Hub/main/Main.lua", true))()
 end)
  
 -- PLAYER
