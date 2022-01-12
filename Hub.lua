@@ -7,15 +7,19 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
  
 MainSection:NewButton("Tornado X Chat Spammer", "The Tornado X Chat Spammer", function(v)
-	loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa", true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2KxKc8Xa", true))()
 end)
  
 MainSection:NewButton("Prison Life", "A Prison Life Script", function(v)
-	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 end)
 
 MainSection:NewButton("Kitty Hub", "Kitty Hub A Few Games And Dark Theme", function(v)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/KittenPixel-cell/Kitty-Hub/main/Main.lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KittenPixel-cell/Kitty-Hub/main/Main.lua", true))()
+end)
+
+MainSection:NewButton("Infinite Yield", "Infinite Yield Admin Commands", function(v)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
  
 -- PLAYER
